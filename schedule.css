@@ -1,0 +1,164 @@
+/*  GLOBAL  */
+body {
+    margin: 0;
+    background-color: #111;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  /*  TIMETABLE STYLES */
+  .gym-timetable-section {
+    padding: 40px 20px;
+  }
+
+  .gym-timetable-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .gym-timetable-wrapper {
+    overflow-x: auto;
+  }
+
+  .gym-timetable-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+  }
+
+  .gym-timetable-table th,
+  .gym-timetable-table td {
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #222;
+  }
+
+  .gym-timetable-table thead {
+    background-color: #ff3c00;
+  }
+
+  .gym-timetable-table tbody td {
+    background-color: #1a1a1a;
+    color: #ccc;
+  }
+
+  .gym-timetable-table td:first-child,
+  .gym-timetable-table th:first-child {
+    background-color: #ff3c00;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    .gym-timetable-table {
+      font-size: 14px;
+    }
+  }
+
+  /*  PRICING SLIDER STYLES  */
+  .gym-pricing-section {
+    padding: 40px 20px;
+  }
+
+  .pricing-title {
+    font-size: 32px;
+  }
+
+  .pricing-slider-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+  }
+
+  .pricing-slider-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .pricing-card {
+    flex: 0 0 33.3333%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .pricing-card-inner {
+    background-color: #3a3232;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(51, 45, 45, 0.5);
+    text-align: center;
+    height: 100%;
+  }
+
+  .pricing-card-inner h3 {
+    font-size: 32px;
+    color: #ff3c00;
+    margin-bottom: 10px;
+  }
+
+  .pricing-card-inner p {
+    font-size: 16px;
+    color: #ccc;
+  }
+
+  .pricing-slider-buttons {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .pricing-slider-buttons button {
+    padding: 10px 20px;
+    background-color: #ff3c00;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+
+  .pricing-slider-buttons button:hover {
+    background-color: #e63600;
+  }
+
+  @media (max-width: 768px) {
+    .pricing-card {
+      flex: 0 0 50%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .pricing-card {
+      flex: 0 0 100%;
+    }
+  }
+  /*  HOVER ANİMASYONLARI */
+
+/* Timetable hücreleri hover efekti */
+.gym-timetable-table td:hover {
+    background-color: #292929;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  /* Pricing kart hover efekti */
+  .pricing-card-inner {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .pricing-card-inner:hover {
+    transform: scale(1.05);
+    background-color: #2a2a2a;
+    box-shadow: 0 0 30px rgba(255, 60, 0, 0.3);
+  }
+  
+  
+  .pricing-slider-buttons button {
+    transition: background-color 0.3s ease;
+  }
